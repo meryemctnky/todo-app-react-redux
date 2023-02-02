@@ -37,7 +37,7 @@ app.use(function (req, res, next) {
   
   app.listen(PORT, console.log(`Server running on port ${PORT}`.green.bold));
 
-  ///////////////////////////////////////////////////////////////////////////////////
+
   app.get("/todos", (req, res) => {
   Todo.find({}, (err, data) => {
     if (err) res.send(err);
